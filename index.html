@@ -157,7 +157,7 @@
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(images/Banner/RetiroB2.avif);">
+	      <div class="slider-item" style="background-image:url(https://img.freepik.com/free-photo/elderly-couple-holding-each-other-romantically-their-countryside-home-garden_23-2149511750.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -471,22 +471,9 @@
   <div class="col-md-12">
     <div class="carousel-testimony owl-carousel ftco-owl">
 
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Los trámites de las afores deberían de ser gratuitos, son nuestros derechos como trabajadores</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(images/work-4.jpg)"></div>
-              <div class="pl-3">
-                <p class="name">Miguel Jimenez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
-      <div class="item">
+      <!-- <div class="item">
         <div class="testimony-wrap py-4">
           <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
           <div class="text">
@@ -499,7 +486,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="item">
         <div class="testimony-wrap py-4">
@@ -522,7 +509,7 @@
           <div class="text">
             <p class="mb-4">Yo hice mi retiro de remodelación de vivienda, aunque fue un poco tardado el trámite</p>
             <div class="d-flex align-items-center">
-              <img class="user-img" src="https://img.freepik.com/free-vector/women-s-day-girl-power-hand-drawn_52683-55664.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_hybrid&w=740" alt="User Image" style="width: 80px;">
+              <img class="user-img" src="https://img.freepik.com/free-photo/woman-cream-dress_23-2151937001.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80" alt="User Image" style="width: 80px;">
               <div class="pl-3">
                 <p class="name">Miriam Rodriguez</p>
               </div>
@@ -546,7 +533,7 @@
         </div>
       </div>
 
-      <div class="item">
+      <!-- <div class="item">
         <div class="testimony-wrap py-4">
           <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
           <div class="text">
@@ -559,7 +546,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="item">
         <div class="testimony-wrap py-4">
@@ -576,7 +563,7 @@
         </div>
       </div>
 
-      <div class="item">
+      <!-- <div class="item">
         <div class="testimony-wrap py-4">
           <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
           <div class="text">
@@ -589,7 +576,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="item">
         <div class="testimony-wrap py-4">
@@ -652,23 +639,19 @@
       </div>
 
       <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Me toco un asesor que no me explico bien el tramite y el pago. Espero que mejoren el servicio</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Laura.avif)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Laura Gonzalez</p>
-		                    <!-- <span class="position">Marketing Manager</span> -->
-		                  </div>
-	                  </div>
-                  </div>
-
-				  
-
-                </div>
+        <div class="testimony-wrap py-4">
+          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+          <div class="text">
+            <p class="mb-4">Me atendieron bien, pero siento que pudieron darme más información sobre el proceso</p>
+            <div class="d-flex align-items-center">
+              <div class="user-img" style="background-image: url(https://img.freepik.com/free-photo/front-view-mother-holding-cute-baby_23-2150412224.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80)"></div>
+              <div class="pl-3">
+                <p class="name">Flor Martinez</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- 5 más eliminados aquí -->
 
@@ -871,5 +854,37 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
+
+    <script>
+  // Función para evitar ejecuciones excesivas en resize
+  function debounce(fn, ms) {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), ms);
+    };
+  }
+
+  // Refrescar Owl cuando todo cargue (imágenes incluidas)
+  window.addEventListener('load', function () {
+    const $carr = $('.carousel-testimony');
+    if ($carr.length) {
+      $carr.trigger('refresh.owl.carousel');
+    }
+  });
+
+  // Refrescar Owl al redimensionar
+  window.addEventListener(
+    'resize',
+    debounce(function () {
+      const $carr = $('.carousel-testimony');
+      if ($carr.length) {
+        $carr.trigger('refresh.owl.carousel');
+      }
+    }, 150)
+  );
+</script>
+
+
   </body>
 </html>
