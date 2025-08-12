@@ -81,6 +81,31 @@
         }
 	</style>
 
+  <style>
+      
+.carousel-testimony .owl-item,
+.carousel-testimony .owl-item .testimony-wrap{
+  opacity: 1 !important;
+  filter: none !important;
+  transition: none !important;
+}
+
+
+.carousel-testimony .owl-item:not(.active),
+.carousel-testimony .owl-item.active:not(.center),
+.carousel-testimony .owl-item.cloned{
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+
+.carousel-testimony .owl-stage-outer::before,
+.carousel-testimony .owl-stage-outer::after{
+  content: none !important;
+}
+
+      </style>
+
 </head>
   <body>
 
@@ -458,7 +483,7 @@
 		</section>
 
 
-    <section class="ftco-section testimony-section bg-primary">
+   <section class="ftco-section testimony-section bg-primary">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
@@ -467,195 +492,126 @@
           </div>
         </div>
         <div class="row ftco-animate">
-          <div class="row ftco-animate">
-  <div class="col-md-12">
-    <div class="carousel-testimony owl-carousel ftco-owl">
+         <div class="col-md-12">
+  <div class="carousel-testimony owl-carousel ftco-owl">
 
-      
-
-      <!-- <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Pude obtener mi pencion gracias a la consultoría ademas el servicio fue muy bueno.</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="https://elklaketazo.wordpress.com/wp-content/uploads/2020/08/patricio-estrella.jpg" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Patricio García</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Es la segunda vez que hago retiro con ellos, primero hice mi retiro por desempleo y este año estamos tramitando mi crédito de infonavit.</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="images/blog/comentarioNuevo.png" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Pato Villagomez</p>
-              </div>
-            </div>
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Es la segunda vez que hago retiro con ellos, primero hice mi retiro por desempleo y este año estamos tramitando mi crédito de infonavit.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('images/blog/comentarioNuevo.png')"></div>
+            <div class="pl-3"><p class="name">Pato Villagomez</p></div>
           </div>
         </div>
       </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Yo hice mi retiro de remodelación de vivienda, aunque fue un poco tardado el trámite</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="https://img.freepik.com/free-photo/woman-cream-dress_23-2151937001.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Miriam Rodriguez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Se me hizo caro el trámite y mejor ya no seguí</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrA05TVH22s546Ey_k1hxevJd28OQEtxW33A&s" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Aime Rodriguez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Buen servicio, aunque si fue un poco tardado</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNMLMEEpgqe0PEmhDttNVvotHm1--IVUxWQ&s" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Alonso Garcia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Es la segunda vez que me ayudan con mi retiro de desempleo, gracias</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="https://cdn.midjourney.com/f668f119-c93d-4630-bd42-7c754aa6b2db/0_2.png" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Rogelio Garcia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Solicite mi trámite de pensión, es una excelente consultoría son muy profesionales</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(https://imgmedia.larepublica.pe/640x800/larepublica/migration/images/AU7Q6S4JFRAK7LLOCSWS34XQVI.webp)"></div>
-              <div class="pl-3">
-                <p class="name">Melanie Martinez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Me ayudaron con mi trámite logre mi trámite de retiro parcial. Gracias a ello, pude disfrutar con mi familia</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(images/5.png)"></div>
-              <div class="pl-3">
-                <p class="name">Maria Guadalupe</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Gracias por ayudarnos a mi familia y a mí a sacar mi crédito de infonavit ya estamos viendo lo de nuestra casita en Chalco</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(https://cdn.midjourney.com/2b904a07-0702-4fa9-a8ee-4d7bf03677dd/0_3.png)"></div>
-              <div class="pl-3">
-                <p class="name">Veronica Gomez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">No se me hace justo que las afores pongan tantos requisitos para que uno retire su dinero siempre ponen peros</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(https://img.freepik.com/free-photo/cheerful-couple-their-moving-day_1098-1896.jpg?t=st=1738950513~exp=1738954113~hmac=60598d38d2e0c1adf13bc0385778a1708a20b84b0b2f867f576fafe96c0b12fc&w=996)"></div>
-              <div class="pl-3">
-                <p class="name">Isabel Jimenez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Yo estoy solicitando mi negativa de pensión, solo que sí es un poco tardado como todo lo que se hace en el seguro</p>
-            <div class="d-flex align-items-center">
-              <img class="user-img" src="images/blog/PersonaComentario2.png" alt="User Image" style="width: 80px;">
-              <div class="pl-3">
-                <p class="name">Angelica Garcia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="testimony-wrap py-4">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-          <div class="text">
-            <p class="mb-4">Me atendieron bien, pero siento que pudieron darme más información sobre el proceso</p>
-            <div class="d-flex align-items-center">
-              <div class="user-img" style="background-image: url(https://img.freepik.com/free-photo/front-view-mother-holding-cute-baby_23-2150412224.jpg?ga=GA1.1.1802533643.1735888286&semt=ais_incoming&w=740&q=80)"></div>
-              <div class="pl-3">
-                <p class="name">Flor Martinez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5 más eliminados aquí -->
-
     </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Yo hice mi retiro de remodelación de vivienda, aunque fue un poco tardado el trámite.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://img.freepik.com/free-photo/woman-cream-dress_23-2151937001.jpg')"></div>
+            <div class="pl-3"><p class="name">Miriam Rodriguez</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Se me hizo caro el trámite y mejor ya no seguí.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrA05TVH22s546Ey_k1hxevJd28OQEtxW33A&s')"></div>
+            <div class="pl-3"><p class="name">Aime Rodriguez</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Es la segunda vez que me ayudan con mi retiro de desempleo, gracias.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://cdn.midjourney.com/f668f119-c93d-4630-bd42-7c754aa6b2db/0_2.png')"></div>
+            <div class="pl-3"><p class="name">Rogelio Garcia</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Me ayudaron con mi trámite logre mi trámite de retiro parcial. Gracias a ello, pude disfrutar con mi familia.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('images/5.png')"></div>
+            <div class="pl-3"><p class="name">Maria Guadalupe</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Gracias por ayudarnos a mi familia y a mí a sacar mi crédito de infonavit ya estamos viendo lo de nuestra casita en Chalco.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://cdn.midjourney.com/2b904a07-0702-4fa9-a8ee-4d7bf03677dd/0_3.png')"></div>
+            <div class="pl-3"><p class="name">Veronica Gomez</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">No se me hace justo que las afores pongan tantos requisitos para que uno retire su dinero siempre ponen peros.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://img.freepik.com/free-photo/cheerful-couple-their-moving-day_1098-1896.jpg')"></div>
+            <div class="pl-3"><p class="name">Isabel Jimenez</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Yo estoy solicitando mi negativa de pensión, solo que sí es un poco tardado como todo lo que se hace en el seguro.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('images/blog/PersonaComentario2.png')"></div>
+            <div class="pl-3"><p class="name">Angelica Garcia</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="testimony-wrap py-4">
+        <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
+        <div class="text">
+          <p class="mb-4">Me atendieron bien, pero siento que pudieron darme más información sobre el proceso.</p>
+          <div class="d-flex align-items-center">
+            <div class="user-img" style="background-image:url('https://img.freepik.com/free-photo/front-view-mother-holding-cute-baby_23-2150412224.jpg')"></div>
+            <div class="pl-3"><p class="name">Flor Martinez</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -856,34 +812,17 @@
     
 
     <script>
-  // Función para evitar ejecuciones excesivas en resize
-  function debounce(fn, ms) {
-    let timer;
-    return (...args) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => fn.apply(this, args), ms);
-    };
-  }
+    $('.carousel-testimony').owlCarousel({
+  items: 1,
+  margin: 18,
+  loop: false,
+  dots: true,
+  nav: true,
+  center: false,            // <-- importante
+  responsive: { 0:{items:1}, 768:{items:2}, 1200:{items:3} }
+});
 
-  // Refrescar Owl cuando todo cargue (imágenes incluidas)
-  window.addEventListener('load', function () {
-    const $carr = $('.carousel-testimony');
-    if ($carr.length) {
-      $carr.trigger('refresh.owl.carousel');
-    }
-  });
-
-  // Refrescar Owl al redimensionar
-  window.addEventListener(
-    'resize',
-    debounce(function () {
-      const $carr = $('.carousel-testimony');
-      if ($carr.length) {
-        $carr.trigger('refresh.owl.carousel');
-      }
-    }, 150)
-  );
-</script>
+  </script>
 
 
   </body>
